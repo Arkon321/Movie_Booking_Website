@@ -1,0 +1,59 @@
+.seat-selector {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.seats-container {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.seat:hover {
+  background-color: #ccc;
+}
+
+.seat.selected {
+  background-color: #ffcc00;
+  color: #222;
+  font-weight: bold;
+}
+
+.book-btn {
+  padding: 10px 20px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background-color: #ffcc00;
+  color: #222;
+  transition: 0.3s;
+}
+
+.showtimes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center; /* center horizontally */
+  margin-bottom: 15px;     /* spacing below */
+}
